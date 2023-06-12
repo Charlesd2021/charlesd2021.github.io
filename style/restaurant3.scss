@@ -1,0 +1,240 @@
+
+// Police
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Shrikhand&display=swap');
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Shrikhand', cursive;
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+$breakpoint: 479px;
+// color
+$primary-color: #9356DC;
+$secondary-color:#FF79DA ;
+$third-color: #99E2D0;
+$green: #008766;
+$ligh-blue: #89C8FA;
+$blue: #003A68;
+$white: #F3F3F3;
+$Grey2: #EAEAEA;
+$Background: #F7F7F7;
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    // height: 100%; pas de height 100% mais plutôt min-height
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    .header__left-arrow{
+        position: absolute;
+        // top: 50%;
+        left: 4%;
+        padding: 5px;
+        font-size: 23px;
+        color: black;
+
+    }
+    &__title {
+        font-family: 'Shrikhand', cursive;
+    }
+}
+// img
+.main__img {
+    width: 100%;
+    min-height: auto;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+    max-height: 280px;
+
+}
+
+.main{
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: 768px){
+        background-color: white;
+    }
+}
+
+.main__menu{
+    background-color: $white;
+    position: relative;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    top: -50px;
+    @media screen and (min-width: 768px) {
+        width: 80%; 
+        height: 1130px;
+        position: relative;
+        // justify-content: center;
+        // margin: 0;
+    }
+}
+
+.main__menu__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    border-top-left-radius:15px ;
+    border-top-right-radius: 15px;
+    font-family: "shrikhand", cursive;
+    font-weight: 500;
+    margin: 0;
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+        padding-bottom: 0;
+        padding-top: 50px;
+    }
+    & i{
+        padding-right: 30px;
+        @media screen and (min-width: 768px) {
+            padding-left: 20px;
+        }
+    }
+}
+
+
+
+.main__menu__entree {
+    margin: 0;
+    padding: 10px 20px;
+    .main__menu__entree__title {
+        position: relative;
+        text-transform: uppercase;
+        font-weight: 200;
+        margin-bottom: 30px;
+        padding-left: 10px;
+        &::before {
+            content: '';
+            background-color: $third-color;
+            position: absolute;
+            bottom: -10px;
+            width: 50px;
+            height: 4px;
+        }
+    }
+}
+
+.plat{
+    display: flex;
+    box-shadow: 0 2px 8px rgba(0,0,0,.421);
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background-color: white;
+
+    .plat__description {
+        margin: 0px;
+        padding: 10px;
+
+        h4{
+            font-size: 18px;
+            margin: 0;
+            padding: 0;
+        }
+        p {
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .plat__prix {
+        display: flex;
+        font-weight: 500;
+        margin-left: auto;
+        align-items: flex-end;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 10px 25px 10px 5px;
+    }
+}
+
+// commander button btn
+.btn-commander {
+    background-color: #003A68;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 25px;
+    letter-spacing: 1px;
+    color: #fff;
+    font-weight: 400;
+    background: linear-gradient(to bottom, #FF79DA, #9356DC 80%);
+    box-shadow: 0 2px 8px rgba(0,0,0,.421);
+    margin: 0 auto;
+    text-decoration: none;
+    @media screen and (min-width: 768px){
+        margin-bottom: 0; 
+        z-index: 11;     
+        margin-top: 10px;  
+    }
+}
+.hole{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: -49px;
+    z-index: 10;
+    background-color: #F3F3F3;
+}
+
+
+
+
+// footer
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #353535;
+    color: white;
+    padding-left: 5%;
+    padding-bottom: 10px;
+
+    .footer__title{
+        margin-top: 5%;
+        font-family: 'Shrikhand', cursive;  
+        font-weight: 400; 
+        font-style: italic;
+    }
+    .footer__list{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__list__1{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .footer__list__2{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .footer__list__p{
+        margin: 6px 0;
+    }
+}
