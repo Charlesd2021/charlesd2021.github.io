@@ -38,8 +38,8 @@ body {
 .load-container{
     position: fixed;
     z-index: 20;
-    background-color: black;
-    background-size: 100%;
+    // background-color: black;
+    // background-size: 100%;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -61,7 +61,7 @@ body {
     animation: border 1s infinite ;
 }
 .pload{
-    color: white;
+    // color: white;
     display: flex;
     margin: 5px 5px;
     width: 100px;
@@ -85,14 +85,14 @@ body {
 @keyframes disapear {
     from {
         opacity: 1;
-        display: unset;
+        // display: unset;
     }
 
     to {
         opacity: 0;
         z-index: -20;
-        display: unset;
-        display: none;
+        // display: unset;
+        // display: none;
     }
 }
 

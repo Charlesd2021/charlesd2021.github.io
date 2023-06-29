@@ -17,8 +17,6 @@ body {
 .load-container {
   position: fixed;
   z-index: 20;
-  background-color: black;
-  background-size: 100%;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -41,7 +39,6 @@ body {
 }
 
 .pload {
-  color: white;
   display: flex;
   margin: 5px 5px;
   width: 100px;
@@ -64,13 +61,10 @@ body {
 @keyframes disapear {
   from {
     opacity: 1;
-    display: unset;
   }
   to {
     opacity: 0;
     z-index: -20;
-    display: unset;
-    display: none;
   }
 }
 header {
